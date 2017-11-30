@@ -1,104 +1,28 @@
-console.log('app.js is running');
+// import './utils.js'
+// import { square } from './utils.js';
 
-var userName = 'Bobby';
-var age = 30;
-var userLocation = 'Delhi';
+// console.log('app.js is running');
+// console.log(square(4));
+// console.log(add(100, 23));
 
-const appName = {
-  name: 'nishanth',
-  age: 27,
-  location: 'Hyderabad'
-};
+// challenge 
+// person.js
+// named export isAdult(18) - true if adult, otherwise false
+// named export canDrink(18) - true if 21 and over, otherwise false
 
-var template = (
-  <div>
-    <h1>{appName.name.toUpperCase()}</h1>
-    <p> Age: {appName.age} </p>  
-    <p> Location: {userLocation.toUpperCase()} </p>
-  </div>
-);
+// import isAdult and canDrink
+// use both printing result to the console
 
-const appRoot = document.getElementById('app');
+// import { isAdult, canDrink } from './person.js';
+// console.log(isAdult(18));
 
-ReactDOM.render(template, appRoot);
+//import validator from 'validator';
+import React from 'react';
+import ReactDOM from 'react-dom';
 
-class IndecisionApp extends React.Component {
-  render() {
+const template = <p>This is JSX from Webpack</p>;
+ReactDOM.render(template, document.getElementById('app'));
 
-    console.log('Test');
-    return (
-      <div>
-        <Header />
-        <Action />
-        <Options />
-        <AddOption />
-      </div>
-    );
-  }
-}
+//console.log(validator.isEmail('test.name@gmail.com'));
 
-
-class Header extends React.Component {
-  render() {
-    return (
-      <div>
-        <h1>Indecision</h1>
-        <h2>Put your life in the hands of a computer</h2>
-      </div>
-    );
-  }
-}
-
-class Action extends React.Component {
-  render() {
-    return (
-      <div>
-        <button>What should I do?</button>
-      </div>
-    );
-  }
-}
-
-class Options extends React.Component {
-  render() {
-    return (
-      <div>
-        Options component here
-        <Option />
-      </div>
-    );
-  }
-}
-
-class AddOption extends React.Component {
-  render() {
-    return (
-      <div>
-        AddOption component here
-      </div>
-    );
-  }
-}
-
-class Option extends React.Component {
-  render() {
-    return (
-      <div>
-        Option component here
-      </div>
-    );
-  }
-}
-
-const User = () => {
-  return (
-    <div>
-      <p>Name: </p>
-      <p>Age: </p>
-    </div>
-  );
-};
-
-//ReactDOM.render(<User />, document.getElementById('app'));
-
-ReactDOM.render(<IndecisionApp />, document.getElementById('app'));
+//console.log("this is a log message");

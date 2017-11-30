@@ -24,7 +24,7 @@ const appRoot = document.getElementById('app');
 
 ReactDOM.render(template, appRoot);
 */
-class IndecisionApp extends React.Component {
+class decisionApp extends React.Component {
   render() {
     return (
       <div>

@@ -1,6 +1,9 @@
 import React from 'react';
 import Modal from 'react-modal';
 
+// creating an event in IndecisionApp that clears selectedOption state
+// Pass that into OptionModal
+// Call it on button click
 const OptionModal = (props) => (
   <Modal
     isOpen={!!props.selectedOption}

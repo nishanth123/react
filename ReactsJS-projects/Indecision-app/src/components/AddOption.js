@@ -32,3 +32,5 @@ class AddOption extends React.Component {
           );
     }
 }
+
+export default AddOption;

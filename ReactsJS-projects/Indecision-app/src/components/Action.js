@@ -1,5 +1,6 @@
 import React from 'react';
 
+// REUSABLE ITEM IN OTHER PIECES OF CODE
 const Action = (props) => (
   <div>
     <button
